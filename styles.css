@@ -293,6 +293,34 @@ footer {
     border-top: 1px solid rgba(255,255,255,0.1);
 }
 
+/* AI Recommendation Styles */
+.ai-recommendations {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ai-recommendations h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.ai-recommendations ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ai-recommendations li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 /* Mobile Responsiveness Enhancements */
 @media screen and (max-width: 768px) {
     /* Navigation */

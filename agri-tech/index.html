@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="rw">
+<head>
+    <meta charset="UTF-8">
+    <title>Ubushakashatsi bw'Ubuhinzi (Agricultural Tech)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ubushakashatsi bw'Ubuhinzi</h1>
+            <p>Ubufasha mu Kubungabunga no Kurwanya Indwara z'Ibimera</p>
+        </header>
+
+        <main>
+            <section id="disease-detector">
+                <h2>Kugenzura Indwara z'Ibimera</h2>
+                <div class="upload-section">
+                    <input type="file" id="crop-image" accept="image/*">
+                    <button onclick="detectDisease()">Kureba Indwara</button>
+                </div>
+                <div id="result-container" class="result-container">
+                    <!-- AI Disease Detection Results -->
+                </div>
+            </section>
+
+            <section id="crop-disease-detection">
+                <h2>Kubara Indwara z'Ibimera</h2>
+                <div class="disease-detection-container">
+                    <div class="upload-section">
+                        <h3>Kandura Ishusho y'Ibimera</h3>
+                        <input 
+                            type="file" 
+                            id="crop-image-upload" 
+                            accept="image/*" 
+                            class="file-input"
+                        >
+                        <label for="crop-image-upload" class="file-label">
+                            Huriza Ishusho
+                        </label>
+                    </div>
+                    <div 
+                        id="disease-detection-result" 
+                        class="detection-result"
+                    ></div>
+                </div>
+            </section>
+
+            <section id="crop-advice">
+                <h2>Inama z'Ubuhinzi</h2>
+                <div id="advice-container">
+                    <!-- Crop Management Advice -->
+                </div>
+            </section>
+
+            <section id="market-prices">
+                <h2>Ibiciro by'Imbuto</h2>
+                <div id="price-container">
+                    <!-- Local Market Prices -->
+                </div>
+            </section>
+
+            <section id="advanced-insights">
+                <h2>Ubushakashatsi Bw'Ubuhinzi (Advanced Agricultural Insights)</h2>
+                
+                <!-- Geolocation Insights -->
+                <div class="insight-module">
+                    <h3>Ubushakashatsi bw'Ahabanza</h3>
+                    <select id="akarere-select">
+                        <option value="Kigali">Kigali</option>
+                        <option value="Musanze">Musanze</option>
+                        <option value="Butare">Butare</option>
+                    </select>
+                    <button onclick="gukurikiraAhabanza()">Reba Ahabanza</button>
+                    <div id="geolocation-insights" class="insights-container"></div>
+                </div>
+
+                <!-- Weather Forecast -->
+                <div class="insight-module">
+                    <h3>Ifatabuguzi ry'Imvura</h3>
+                    <select id="ukwezi-select">
+                        <option value="Ukwezi kwa 1">Ukwezi kwa 1</option>
+                        <option value="Ukwezi kwa 2">Ukwezi kwa 2</option>
+                    </select>
+                    <button onclick="kubikiraImvura()">Reba Ifatabuguzi</button>
+                    <div id="weather-forecast" class="insights-container"></div>
+                </div>
+
+                <!-- Community Tips -->
+                <div class="insight-module">
+                    <h3>Amabwiriza y'Abandi Bahinzi</h3>
+                    <input type="text" id="inyito-input" placeholder="Andika imbuto (Ibigori, Imbuto)">
+                    <button onclick="werekanaAmabwiriza()">Reba Amabwiriza</button>
+                    <div id="community-tips" class="insights-container"></div>
+                </div>
+
+                <!-- Price Prediction -->
+                <div class="insight-module">
+                    <h3>Ibiciro by'Imbuto</h3>
+                    <select id="imbuto-select">
+                        <option value="Ibigori">Ibigori</option>
+                        <option value="Imbuto">Imbuto</option>
+                    </select>
+                    <button onclick="kubikiraIbiciro()">Reba Ibiciro</button>
+                    <div id="price-prediction" class="insights-container"></div>
+                </div>
+            </section>
+
+            <section id="advanced-agricultural-intelligence">
+                <h2>Ubushakashatsi Bw'Ubuhinzi Burambye</h2>
+                
+                <!-- Crop Recommendation -->
+                <div class="ai-module">
+                    <h3>Gushaka Ibihingwa Bikwiye</h3>
+                    <div class="input-group">
+                        <select id="akarere-crop-select">
+                            <option value="Kigali">Kigali</option>
+                            <option value="Musanze">Musanze</option>
+                        </select>
+                        <select id="igihe-select">
+                            <option value="Ibihingwa by'Umwaka Wose">Umwaka Wose</option>
+                            <option value="Ibihingwa by'Izuba">Izuba</option>
+                            <option value="Ibihingwa by'Imvura">Imvura</option>
+                        </select>
+                        <button onclick="gushakaCrop()">Reba Ibihingwa</button>
+                    </div>
+                    <div id="crop-recommendation" class="recommendation-container"></div>
+                </div>
+
+                <!-- Agricultural Resources -->
+                <div class="ai-module">
+                    <div id="agricultural-resources" class="resources-container"></div>
+                </div>
+
+                <!-- Sustainable Practices -->
+                <div class="ai-module">
+                    <div id="sustainable-practices" class="practices-container"></div>
+                </div>
+
+                <!-- Emergency Support -->
+                <div class="ai-module">
+                    <div id="emergency-support" class="emergency-container"></div>
+                </div>
+            </section>
+
+            <section id="contact-support">
+                <div class="contact-container">
+                    <div id="contact-info" class="contact-details-section"></div>
+                    
+                    <div class="feedback-section">
+                        <div id="feedback-container"></div>
+                        <div id="feedback-message"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p> 2025 Ubushakashatsi bw'Ubuhinzi</p>
+        </footer>
+    </div>
+
+    <script src="agri-tech.js"></script>
+</body>
+</html>
